@@ -14,4 +14,10 @@ public class Point {
         int deltaY = p2.y - this.y;
         return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     }
+
+    public double distance2Point(int x1, int y1, int x2, int y2) {
+        int deltaX = x2 - x1;
+        int deltaY = y2 - y1;
+        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    }
 }
