@@ -1,4 +1,4 @@
-package step2;
+package model;
 
 public class ContactNameData {
     private final String firstName;
