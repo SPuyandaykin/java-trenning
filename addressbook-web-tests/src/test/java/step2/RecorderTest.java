@@ -26,7 +26,7 @@ public class RecorderTest {
     }
     
     @Test
-    public void RecorderTest() {
+    public void testOfRecorder() {
         wd.get("http://localhost/addressbook/");
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
         wd.findElement(By.name("user")).click();
