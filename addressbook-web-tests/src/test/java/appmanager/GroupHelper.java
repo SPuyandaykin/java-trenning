@@ -27,4 +27,13 @@ public class GroupHelper extends HelperBase {
     public void SelectGroupPage() {
         click(By.linkText("groups"));
     }
+
+    public void SelectFirstGroup() {
+    }
+
+    public void EditGroup() {
+    }
+
+    public void UpdateGroup() {
+    }
 }

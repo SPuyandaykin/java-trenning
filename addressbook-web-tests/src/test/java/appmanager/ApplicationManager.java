@@ -36,35 +36,11 @@ public class ApplicationManager {
         return groupHelper;
     }
 
-    public NavigationHelper getNavigationHelper() {
-        return navigationHelper;
-    }
-
-    public void ReturnToGroupPage() {
-        navigationHelper.ReturnToGroupPage();
-    }
-
-    public void ReturnToHomePage() {
-        navigationHelper.ReturnToHomePage();
-    }
-
     public ContactHelper getContactHelper() {
         return contactHelper;
     }
 
-    public void SubminContactCreating() {
-        contactHelper.SubminContactCreating();
-    }
-
-    public void FillPhoneFields(ContactPhoneData contactPhoneData) {
-        contactHelper.FillPhoneFields(contactPhoneData);
-    }
-
-    public void FillNameFields(ContactNameData contactNameData) {
-        contactHelper.FillNameFields(contactNameData);
-    }
-
-    public void CreateNewContact() {
-        contactHelper.CreateNewContact();
+    public NavigationHelper getNavigationHelper() {
+        return navigationHelper;
     }
 }

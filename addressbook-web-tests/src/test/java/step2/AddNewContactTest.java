@@ -8,11 +8,11 @@ public class AddNewContactTest extends TestBase{
 
     @Test
     public void testAddNewContact() {
-        app.CreateNewContact();
-        app.FillNameFields(new ContactNameData("sergey", "ivanov", "Java Corporation"));
-        app.FillPhoneFields(new ContactPhoneData("+79031111111", "+79042222222"));
-        app.SubminContactCreating();
-        app.ReturnToHomePage();
+        app.getContactHelper().CreateNewContact();
+        app.getContactHelper().FillNameFields(new ContactNameData("sergey", "ivanov", "Java Corporation"));
+        app.getContactHelper().FillPhoneFields(new ContactPhoneData("+79031111111", "+79042222222"));
+        app.getContactHelper().SubminContactCreating();
+        app.getNavigationHelper().ReturnToHomePage();
     }
 
 }

@@ -11,7 +11,7 @@ public class AddNewGroupTest extends TestBase{
         app.getGroupHelper().CreateNewGroup();
         app.getGroupHelper().FillNewGroupField(new GroupData("TestGroup", "test header", "test footer"));
         app.getGroupHelper().SubmitGroupCreating();
-        app.ReturnToGroupPage();
+        app.getNavigationHelper().ReturnToGroupPage();
     }
 
 }
