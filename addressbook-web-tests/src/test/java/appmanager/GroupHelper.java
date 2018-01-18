@@ -29,11 +29,22 @@ public class GroupHelper extends HelperBase {
     }
 
     public void SelectFirstGroup() {
+        click(By.name("selected[]"));
     }
 
     public void EditGroup() {
+        click(By.name("edit"));
     }
 
     public void UpdateGroup() {
+        click(By.name("update"));
+    }
+
+    public void ChangeGroupFooter(String text) {
+        type(By.name("group_footer"), text);
+    }
+
+    public void DeleteGroup() {
+        click(By.name("delete"));
     }
 }

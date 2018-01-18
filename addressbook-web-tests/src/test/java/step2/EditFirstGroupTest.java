@@ -9,6 +9,7 @@ public class EditFirstGroupTest extends TestBase{
         app.getGroupHelper().SelectGroupPage();
         app.getGroupHelper().SelectFirstGroup();
         app.getGroupHelper().EditGroup();
+        app.getGroupHelper().ChangeGroupFooter("test2 footer");
         app.getGroupHelper().UpdateGroup();
         app.getNavigationHelper().ReturnToGroupPage();
     }

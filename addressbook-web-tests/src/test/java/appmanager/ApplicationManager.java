@@ -19,7 +19,7 @@ public class ApplicationManager {
     public void init() {
         //        wd = new FirefoxDriver();
         wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Tools/Browsers/Mozilla Firefox ESR/firefox.exe"));
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
@@ -29,7 +29,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        wd.quit();
+ //       wd.quit();
     }
 
     public GroupHelper getGroupHelper() {
