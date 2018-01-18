@@ -2,23 +2,38 @@ package appmanager;
 
 import model.ContactNameData;
 import model.ContactPhoneData;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
-    private FirefoxDriver wd;
+    private WebDriver wd;
 
     private ContactHelper contactHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
+    private String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public void init() {
-        //        wd = new FirefoxDriver();
-        wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Tools/Browsers/Mozilla Firefox ESR/firefox.exe"));
+
+        if (browser == BrowserType.FIREFOX) {
+            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Tools/Browsers/Mozilla Firefox ESR/firefox.exe"));
+        } else if (browser == BrowserType.CHROME) {
+            wd = new ChromeDriver();
+        } else if (browser == BrowserType.IE){
+            wd = new InternetExplorerDriver();
+        }
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(wd);
@@ -29,7 +44,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
- //       wd.quit();
+        wd.quit();
     }
 
     public GroupHelper getGroupHelper() {
@@ -42,5 +57,9 @@ public class ApplicationManager {
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
+    }
+
+    public void PrintOutTitle() {
+        System.out.println("Title is :" + wd.getTitle());
     }
 }
