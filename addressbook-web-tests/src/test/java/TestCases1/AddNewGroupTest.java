@@ -1,4 +1,4 @@
-package step2;
+package TestCases1;
 
 import model.GroupData;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package step2;
+package TestCases1;
 
 import appmanager.ApplicationManager;
 import org.testng.annotations.AfterMethod;
