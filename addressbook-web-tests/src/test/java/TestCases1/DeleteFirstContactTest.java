@@ -8,5 +8,6 @@ public class DeleteFirstContactTest extends TestBase{
     public void testDeleteFirstContact () {
         app.getContactHelper().SelectFirstContact();
         app.getContactHelper().DeleteContact();
+        app.getNavigationHelper().OpenHomePage();
     }
 }
