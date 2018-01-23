@@ -8,10 +8,7 @@ public class AddNewGroupTest extends TestBase{
     @Test
     public void testAddNewGroup() {
         app.getGroupHelper().SelectGroupPage();
-        app.getGroupHelper().CreateNewGroup();
-        app.getGroupHelper().FillNewGroupField(new GroupData("TestGroup", "test header", "test footer"));
-        app.getGroupHelper().SubmitGroupCreating();
-        app.getNavigationHelper().ReturnToGroupPage();
+        app.getGroupHelper().NewGroupAdd(new GroupData("TestGroup", "test header", "test footer"));
     }
 
 }

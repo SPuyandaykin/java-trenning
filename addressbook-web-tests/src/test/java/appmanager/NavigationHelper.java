@@ -11,15 +11,8 @@ public class NavigationHelper extends HelperBase{
         super(wd);
     }
 
-    public void ReturnToGroupPage() {
-        click(By.linkText("group page"));
-    }
-
-    public void ReturnToHomePage() {
-        click(By.linkText("home page"));
-    }
-
     public void OpenHomePage() {
         click(By.linkText("home"));
     }
+
 }
