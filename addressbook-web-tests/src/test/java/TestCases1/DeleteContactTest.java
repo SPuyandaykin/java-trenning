@@ -4,7 +4,7 @@ import model.ContactNameData;
 import model.ContactPhoneData;
 import org.testng.annotations.Test;
 
-public class DeleteFirstContactTest extends TestBase{
+public class DeleteContactTest extends TestBase{
 
     @Test
     public void testDeleteFirstContact () {

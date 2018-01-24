@@ -4,7 +4,7 @@ import model.ContactNameData;
 import model.ContactPhoneData;
 import org.testng.annotations.Test;
 
-public class EditFirstContactTest extends TestBase {
+public class EditContactTest extends TestBase {
 
     @Test
     public void testEditFirstContact(){
