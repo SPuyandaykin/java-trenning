@@ -1,7 +1,11 @@
 package model;
 
+import java.util.Objects;
+
 public class ContactNameData {
-    private final String firstName;
+
+
+    private String firstName;
     private final String lastName;
     private final String company;
 
@@ -9,6 +13,34 @@ public class ContactNameData {
         this.firstName = firstName;
         this.lastName = lastName;
         this.company = company;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactNameData{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", company='" + company + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactNameData that = (ContactNameData) o;
+        return Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(firstName, lastName);
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getFirstName() {

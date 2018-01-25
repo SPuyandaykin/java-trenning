@@ -6,11 +6,6 @@ public class GroupData {
     private final String name;
     private final String header;
     private final String footer;
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     private int id;
 
     @Override
@@ -48,6 +43,9 @@ public class GroupData {
         this.name = name;
         this.header = header;
         this.footer = footer;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() { return id; }
