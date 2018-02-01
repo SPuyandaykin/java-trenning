@@ -16,9 +16,9 @@ public class AddNewContactTest extends TestBase{
         ContactPhoneData contactPhone = new ContactPhoneData ("+79031111111", "+79042222222");
         ContactData contact = new ContactData().withContactName(contactName).withContactPhone(contactPhone);
         app.contact().create(contact);
-        Contacts after = app.contact().all();
 
-        assertThat(after.size(), equalTo(before.size()+1));
+        assertThat(app.contact().count(), equalTo(before.size()+1));
+        Contacts after = app.contact().all();
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 

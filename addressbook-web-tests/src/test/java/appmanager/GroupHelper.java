@@ -134,4 +134,8 @@ public class GroupHelper extends HelperBase {
         groupCache = null;
         ReturnToGroupPage();
     }
+
+    public int count() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
 }
