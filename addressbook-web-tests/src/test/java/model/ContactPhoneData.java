@@ -11,6 +11,11 @@ public class ContactPhoneData {
         this.phoneMobile = phoneMobile;
     }
 
+    public ContactPhoneData(ContactPhoneData contactPhone) {
+        this.phoneHome = contactPhone.phoneHome;
+        this.phoneMobile = contactPhone.phoneMobile;
+    }
+
     @Override
     public String toString() {
         return "ContactPhoneData{" +

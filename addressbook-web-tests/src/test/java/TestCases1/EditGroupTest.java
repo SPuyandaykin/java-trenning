@@ -1,34 +1,43 @@
 package TestCases1;
 
 import model.GroupData;
+import model.Groups;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.testng.Assert.*;
 
 public class EditGroupTest extends TestBase{
 
+    @BeforeMethod
+    public void insurePreconditions(){
+        app.group().page();
+        if(!app.group().size())
+            app.group().create(new GroupData().withName("TestGroup"+System.currentTimeMillis())
+                    .withHeader("test header")
+                    .withFooter("test footer"));
+    }
+
     @Test
     public void testEditFirstGroup(){
-        app.getGroupHelper().SelectGroupPage();
-        if(!app.getGroupHelper().isAnyGroup())
-            app.getGroupHelper().NewGroupAdd(new GroupData("TestGroup"+System.currentTimeMillis(),
-                    "test header", "test footer"));
-        List<GroupData> before = app.getGroupHelper().getGroupList();
-        app.getGroupHelper().SelectGroup(before.size()-1);
-        app.getGroupHelper().EditGroup();
-        GroupData oldGroup = before.get(before.size()-1);
-        GroupData group = new GroupData(oldGroup.getId(),oldGroup.getName(),"test header2", "test footer2");
-        app.getGroupHelper().FillNewGroupField(group);
-        app.getGroupHelper().UpdateGroup();
-        app.getGroupHelper().ReturnToGroupPage();
-        List<GroupData> after = app.getGroupHelper().getGroupList();
-        Assert.assertEquals(after.size(), before.size());
+        Groups before = app.group().all();
+        GroupData modifiedGroup = before.iterator().next();
+        GroupData group = new GroupData()
+                .withId(modifiedGroup.getId()).withName(modifiedGroup.getName()).withHeader("test header2").withFooter("test footer2");
+        app.group().modify(group);
+        Groups after = app.group().all();
 
-        before.remove(before.size()-1);
-        before.add(group);
-
-        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+        assertEquals(after.size(), before.size());
+        assertThat(after, equalTo(before.withOut(modifiedGroup).withAdded(group)));
     }
+
 }

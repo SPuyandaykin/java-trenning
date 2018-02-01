@@ -3,8 +3,6 @@ package model;
 import java.util.Objects;
 
 public class ContactNameData {
-
-
     private String firstName;
     private final String lastName;
     private final String company;
@@ -13,6 +11,12 @@ public class ContactNameData {
         this.firstName = firstName;
         this.lastName = lastName;
         this.company = company;
+    }
+
+    public ContactNameData(ContactNameData contactName) {
+        this.firstName = contactName.firstName;
+        this.lastName = contactName.lastName;
+        this.company = contactName.company;
     }
 
     @Override

@@ -20,7 +20,7 @@ public class RecorderTest {
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
     
-    @Test
+    @Test(enabled = false)
     public void testOfRecorder() {
         wd.get("http://localhost/addressbook/");
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();

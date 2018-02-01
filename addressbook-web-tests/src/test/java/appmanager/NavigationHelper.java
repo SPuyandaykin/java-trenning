@@ -11,7 +11,7 @@ public class NavigationHelper extends HelperBase{
         super(wd);
     }
 
-    public void OpenHomePage() {
+    public void home() {
         click(By.linkText("home"));
     }
 

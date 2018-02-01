@@ -3,15 +3,15 @@ package model;
 import java.util.Objects;
 
 public class ContactData {
-    private int id;
+    private int id = Integer.MAX_VALUE;
     private ContactNameData contactName;
     private ContactPhoneData contactPhone;
 
-    public ContactData (int id, ContactNameData contactName, ContactPhoneData contactPhone) {
+/*    public ContactData (int id, ContactNameData contactName, ContactPhoneData contactPhone) {
         this.id = id;
         this.contactName = contactName;
         this.contactPhone = contactPhone;
-    }
+    }*/
 
     @Override
     public boolean equals(Object o) {
@@ -28,17 +28,11 @@ public class ContactData {
         return Objects.hash(id, contactName);
     }
 
-    public ContactData (ContactNameData contactName, ContactPhoneData contactPhone) {
+/*    public ContactData (ContactNameData contactName, ContactPhoneData contactPhone) {
         this.id = 0;
         this.contactName = contactName;
         this.contactPhone = contactPhone;
-    }
-
-    public int getId() { return id; }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    }*/
 
     @Override
     public String toString() {
@@ -48,6 +42,7 @@ public class ContactData {
                 ", contactPhone=" + contactPhone +
                 '}';
     }
+    public int getId() { return id; }
 
     public ContactNameData getContactName() {
         return contactName;
@@ -57,5 +52,18 @@ public class ContactData {
         return contactPhone;
     }
 
+    public ContactData withId(int id) {
+        this.id = id;
+        return this;
+    }
 
+    public ContactData withContactPhone(ContactPhoneData contactPhone) {
+        this.contactPhone = contactPhone;
+        return this;
+    }
+
+    public ContactData withContactName(ContactNameData contactName) {
+        this.contactName = contactName;
+        return this;
+    }
 }
