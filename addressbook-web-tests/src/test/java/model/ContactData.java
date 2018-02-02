@@ -7,28 +7,24 @@ public class ContactData {
     private ContactNameData contactName;
     private ContactPhoneData contactPhone;
 
-/*    public ContactData (int id, ContactNameData contactName, ContactPhoneData contactPhone) {
-        this.id = id;
-        this.contactName = contactName;
-        this.contactPhone = contactPhone;
-    }*/
 
     @Override
+    // comparing without "company" field of "contactName" object
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
         return id == that.id &&
-                Objects.equals(contactName, that.contactName);
+                Objects.equals(contactName, that.contactName) &&
+                Objects.equals(contactPhone, that.contactPhone);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, contactName);
+        return Objects.hash(id, contactName, contactPhone);
     }
-
-/*    public ContactData (ContactNameData contactName, ContactPhoneData contactPhone) {
+    /*    public ContactData (ContactNameData contactName, ContactPhoneData contactPhone) {
         this.id = 0;
         this.contactName = contactName;
         this.contactPhone = contactPhone;

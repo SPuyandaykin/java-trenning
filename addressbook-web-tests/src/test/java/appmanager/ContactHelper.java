@@ -23,17 +23,6 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void FillPhoneFields(ContactPhoneData contactPhoneData) {
-        type(By.name("home"), contactPhoneData.getPhoneHome());
-        type(By.name("mobile"), contactPhoneData.getPhoneMobile());
-    }
-
-    public void FillNameFields(ContactNameData contactNameData) {
-        type(By.name("firstname"), contactNameData.getFirstName());
-        type(By.name("lastname"), contactNameData.getLastName());
-        type(By.name("company"), contactNameData.getCompany());
-    }
-
     public void CreateNewContact() {
         click(By.linkText("add new"));
     }
@@ -73,6 +62,7 @@ public class ContactHelper extends HelperBase {
         CreateNewContact();
         FillContactForms(contactData);
         SubmitContactCreating();
+        contactCache = null;
         ReturnToHomePage();
     }
 
@@ -102,16 +92,25 @@ public class ContactHelper extends HelperBase {
         return contacts;
     }
 
+    private Contacts contactCache = null;
+
     public Contacts all() {
+        if (contactCache != null){
+            return new Contacts(contactCache);
+        }
         Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element :  elements) {
-            String lastName = element.findElement(By.xpath(".//td[2]")).getText();
-            String firstName = element.findElement(By.xpath(".//td[3]")).getText();
-            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            List<WebElement> cells = element.findElements(By.tagName("td"));
+            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+            ContactNameData contactName = new ContactNameData(cells.get(2).getText(),
+                    cells.get(1).getText(), "");
 
-            ContactNameData contactName = new ContactNameData(firstName, lastName, "");
-            ContactPhoneData contactPhone = new ContactPhoneData ("", "");
+            ContactPhoneData contactPhone = new ContactPhoneData();
+            contactPhone.setAllPhones(cells.get(5).getText());
+            contactPhone.setEmail(cells.get(4).getText());
+            contactPhone.setAddress(cells.get(3).getText());
+
             ContactData group = new ContactData()
                     .withId(id).withContactName(contactName).withContactPhone(contactPhone);
             contacts.add(group);
@@ -132,6 +131,7 @@ public class ContactHelper extends HelperBase {
         EditContactSelectById(contact.getId());
         FillContactForms(contact);
         UpdateContact();
+        contactCache = null;
         ReturnToHomePage();
     }
 
@@ -152,12 +152,50 @@ public class ContactHelper extends HelperBase {
     public void delete(ContactData deletedContact) {
         selectById(deletedContact.getId());
         deleteSelectedContact();
-
     }
 
     public void deleteSelectedContact(){
         click(By.xpath("//input[@value='Delete']"));
         wd.switchTo().alert().accept();
+        contactCache = null;
+    }
+
+    public int count() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public void FillPhoneFields(ContactPhoneData contactPhoneData) {
+        type(By.name("home"), contactPhoneData.getPhoneHome());
+        type(By.name("mobile"), contactPhoneData.getPhoneMobile());
+        type(By.name("work"), contactPhoneData.getWorkMobile());
+        type(By.name("email"), contactPhoneData.getEmail());
+        type(By.name("address"), contactPhoneData.getAddress());
+    }
+
+    public void FillNameFields(ContactNameData contactNameData) {
+        type(By.name("firstname"), contactNameData.getFirstName());
+        type(By.name("lastname"), contactNameData.getLastName());
+        type(By.name("company"), contactNameData.getCompany());
+    }
+
+    public ContactData infoFromContactForm(ContactData contact) {
+        EditContactSelectById(contact.getId());
+
+        ContactNameData contactName = new ContactNameData(
+                getLabel(By.name("firstname")),
+                getLabel(By.name("lastname")),
+                getLabel(By.name("company")));
+        ContactPhoneData contactPhone = new ContactPhoneData (
+                getLabel(By.name("home")),
+                getLabel(By.name("mobile")),
+                getLabel(By.name("work")),
+                getLabel(By.name("email")),
+                getLabel(By.name("address")));
+
+        wd.navigate().back();
+        return new ContactData().withId(contact.getId())
+                .withContactName(contactName).withContactPhone(contactPhone);
+
     }
 }
 

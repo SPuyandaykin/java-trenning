@@ -39,9 +39,9 @@ public class EditContactTest extends TestBase {
                 .withId(modifiedContact.getId()).withContactName(contactName).withContactPhone(contactPhone);
 
         app.contact().modify(contact);
-        Contacts after = app.contact().all();
 
-        assertEquals(after.size(), before.size());
+        assertThat(app.contact().count(), equalTo(before.size()));
+        Contacts after = app.contact().all();
         assertThat(after, equalTo(before.withOut(modifiedContact).withAdded(contact)));
 
     }
