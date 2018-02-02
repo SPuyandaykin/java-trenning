@@ -29,6 +29,7 @@ public class ContactNameData {
     }
 
     @Override
+    // comparing without "company" field
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

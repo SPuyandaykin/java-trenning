@@ -5,12 +5,16 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import unilities.StringUtilities;
 
 public class HelperBase {
     protected WebDriver wd;
+    protected StringUtilities strUtility;
 
     public HelperBase(WebDriver wd) {
+
         this.wd = wd;
+        strUtility = new StringUtilities();
     }
 
     protected void type(By locator, String text) {
@@ -19,6 +23,10 @@ public class HelperBase {
         click(locator);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
+    }
+
+    protected String getLabel(By locator) {
+        return wd.findElement(locator).getAttribute("value");
     }
 
     protected void click(By locator) {

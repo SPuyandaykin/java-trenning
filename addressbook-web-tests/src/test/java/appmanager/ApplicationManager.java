@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import unilities.StringUtilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -44,7 +45,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        wd.quit();
+       wd.quit();
     }
 
     public GroupHelper group() {
