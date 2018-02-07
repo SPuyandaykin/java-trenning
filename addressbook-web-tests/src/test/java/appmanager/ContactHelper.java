@@ -176,6 +176,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("firstname"), contactNameData.getFirstName());
         type(By.name("lastname"), contactNameData.getLastName());
         type(By.name("company"), contactNameData.getCompany());
+        attach(By.name("photo"), contactNameData.getPhoto());
     }
 
     public ContactData infoFromContactForm(ContactData contact) {
