@@ -1,5 +1,6 @@
 package model;
 
+import com.google.gson.annotations.Expose;
 import unilities.StringUtilities;
 
 import java.util.Arrays;
@@ -7,11 +8,17 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class ContactPhoneData {
+    @Expose
     private String phoneHome = "";
+    @Expose
     private String phoneMobile = "";
+    @Expose
     private String workMobile = "";
+    @Expose
     private String email = "";
+    @Expose
     private String address = "";
+    @Expose
     private String allPhones = "";
 
     public ContactPhoneData() {

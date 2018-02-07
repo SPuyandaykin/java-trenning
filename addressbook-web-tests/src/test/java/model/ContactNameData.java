@@ -1,11 +1,16 @@
 package model;
 
+import com.google.gson.annotations.Expose;
+
 import java.io.File;
 import java.util.Objects;
 
 public class ContactNameData {
+    @Expose
     private String firstName;
+    @Expose
     private final String lastName;
+    @Expose
     private final String company;
     private File photo;
 

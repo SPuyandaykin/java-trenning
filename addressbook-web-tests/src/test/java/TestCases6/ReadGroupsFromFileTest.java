@@ -18,19 +18,16 @@ import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ParameterForAddingGroupsTest extends TestBase {
+public class ReadGroupsFromFileTest extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validGroupsFromXML() throws IOException {
- //       List<Object[]> list = new ArrayList<Object[]>();
         BufferedReader reader = new BufferedReader(
                 new FileReader(new File("src/test/resources/groups.xml")));
         String xml = "";
         String line = reader.readLine();
         while (line != null) {
             xml += line;
- //           String[] split = line.split(";");
- //           list.add(new Object[]{new GroupData().withName(split[0]).withHeader(split[1]).withFooter(split[2])});
             line = reader.readLine();
         }
         XStream xStream = new XStream();
@@ -38,7 +35,6 @@ public class ParameterForAddingGroupsTest extends TestBase {
         List<GroupData> groups = (List<GroupData>)xStream.fromXML(xml);
         return groups.stream().map((g) -> new Object[] {g})
                 .collect(Collectors.toList()).iterator();
- //       return list.iterator();
     }
 
     @DataProvider
@@ -56,11 +52,10 @@ public class ParameterForAddingGroupsTest extends TestBase {
         return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
     }
 
-    @Test(dataProvider = "validGroupsFromJSON")
-    public void testParameterForAddingGroupsTest(GroupData group ) {
+    @Test(dataProvider = "validGroupsFromXML")
+    public void testReadGroupsFromFile(GroupData group ) {
         app.group().page();
         Groups before = app.group().all();
-//        GroupData group = new GroupData().withName(name).withHeader(header).withFooter(footer);
         app.group().create(group);
 
         assertThat(app.group().count(), equalTo(before.size()+1));
