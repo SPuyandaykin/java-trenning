@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import unilities.StringUtilities;
 
+import java.io.File;
+
 public class HelperBase {
     protected WebDriver wd;
     protected StringUtilities strUtility;
@@ -23,6 +25,11 @@ public class HelperBase {
         click(locator);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
+    }
+
+    protected void attach (By locator, File file) {
+        if(file != null)
+            wd.findElement(locator).sendKeys(file.getAbsolutePath());
     }
 
     protected String getLabel(By locator) {

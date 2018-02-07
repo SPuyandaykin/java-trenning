@@ -1,13 +1,26 @@
 package model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.util.Objects;
 
 public class GroupData {
+    @XStreamOmitField
     private int id = Integer.MAX_VALUE;
+    @Expose
     private String name;
+    @Expose
     private String header;
-
+    @Expose
     private String footer;
+
+    @Override
+    public String toString() {
+        return "GroupData{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -24,15 +37,7 @@ public class GroupData {
         return Objects.hash(name, id);
     }
 
-    @Override
-    public String toString() {
-        return "GroupData{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                '}';
-    }
-
-/*    public GroupData(int id, String name, String header, String footer) {
+    /*    public GroupData(int id, String name, String header, String footer) {
         this.id = id;
         this.name = name;
         this.header = header;

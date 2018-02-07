@@ -1,11 +1,13 @@
 package model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactNameData {
     private String firstName;
     private final String lastName;
     private final String company;
+    private File photo;
 
     public ContactNameData(String firstName, String lastName, String company) {
         this.firstName = firstName;
@@ -58,5 +60,18 @@ public class ContactNameData {
 
     public String getCompany() {
         return company;
+    }
+
+    public ContactNameData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
+    public void setPhoto(File photo) {
+        this.photo = photo;
+    }
+    public File getPhoto() {
+
+        return photo;
     }
 }

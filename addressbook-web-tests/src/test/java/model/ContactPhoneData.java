@@ -7,12 +7,12 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class ContactPhoneData {
-    private String phoneHome;
-    private String phoneMobile;
-    private String workMobile;
-    private String email;
-    private String address;
-    private String allPhones;
+    private String phoneHome = "";
+    private String phoneMobile = "";
+    private String workMobile = "";
+    private String email = "";
+    private String address = "";
+    private String allPhones = "";
 
     public ContactPhoneData() {
         phoneHome = "";
@@ -26,6 +26,7 @@ public class ContactPhoneData {
     public ContactPhoneData(String phoneHome, String phoneMobile) {
         this.phoneHome = phoneHome;
         this.phoneMobile = phoneMobile;
+        this.allPhones = mergePhones(this);
     }
 
     public ContactPhoneData(String phoneHome, String phoneMobile, String workMobile, String email, String address) {
