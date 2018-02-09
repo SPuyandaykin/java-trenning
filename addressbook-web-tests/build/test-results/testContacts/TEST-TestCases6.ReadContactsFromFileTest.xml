@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCases6.ReadContactsFromFileTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-09T10:07:14" hostname="s-puyandaykin-n" time="7.17">
+  <properties/>
+  <testcase name="testReadContactsFromFile[0](ContactData{id=2147483647, contactName=ContactNameData{firstName='Sergey0', lastName='Ivanov0', company='javaCorp0'}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building 0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}})" classname="TestCases6.ReadContactsFromFileTest" time="3.02"/>
+  <testcase name="testReadContactsFromFile[1](ContactData{id=2147483647, contactName=ContactNameData{firstName='Sergey1', lastName='Ivanov1', company='javaCorp1'}, contactPhone=ContactPhoneData{email='1ya@yandex.ru', address='Moscow, Red square, building 1', allPhones='+79031111111&#10;+79042222221&#10;+79053333331'}})" classname="TestCases6.ReadContactsFromFileTest" time="1.949"/>
+  <testcase name="testReadContactsFromFile[2](ContactData{id=2147483647, contactName=ContactNameData{firstName='Sergey2', lastName='Ivanov2', company='javaCorp2'}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building 2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}})" classname="TestCases6.ReadContactsFromFileTest" time="2.2"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

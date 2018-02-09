@@ -22,9 +22,10 @@ public class EditGroupTest extends TestBase{
     public void insurePreconditions(){
         app.group().page();
         if(!app.group().size())
-            app.group().create(new GroupData().withName("TestGroup"+System.currentTimeMillis())
-                    .withHeader("test header")
-                    .withFooter("test footer"));
+            if(!app.group().size())
+                app.group().create(new GroupData().withName(app.readProperty("group.name")+System.currentTimeMillis())
+                        .withHeader(app.readProperty("group.header"))
+                        .withFooter(app.readProperty("group.footer")));
     }
 
     @Test
@@ -32,7 +33,10 @@ public class EditGroupTest extends TestBase{
         Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData()
-                .withId(modifiedGroup.getId()).withName(modifiedGroup.getName()).withHeader("test header2").withFooter("test footer2");
+                .withId(modifiedGroup.getId())
+                .withName(modifiedGroup.getName())
+                .withHeader(app.readProperty("group.header")+"2")
+                .withFooter(app.readProperty("group.footer")+"2");
         app.group().modify(group);
 
         assertThat(app.group().count(), equalTo(before.size()));
