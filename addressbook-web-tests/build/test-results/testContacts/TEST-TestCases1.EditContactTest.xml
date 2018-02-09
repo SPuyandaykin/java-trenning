@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCases1.EditContactTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-02-09T06:53:39" hostname="s-puyandaykin-n" time="3.853">
+  <properties/>
+  <testcase name="testEditFirstContact" classname="TestCases1.EditContactTest" time="3.853">
+    <failure message="java.lang.AssertionError: &#10;Expected: &lt;[ContactData{id=79, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building в„–2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=82, contactName=ContactNameData{firstName='sergey1518157919243', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=70, contactName=ContactNameData{firstName='vasiya', lastName='ivanov1', company=''}, contactPhone=ContactPhoneData{email='1ya@yandex.ru', address='Moscow, Red square, building №1', allPhones=''}}, ContactData{id=75, contactName=ContactNameData{firstName='sergey1518079738842', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=69, contactName=ContactNameData{firstName='vasiya', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=74, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=72, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=81, contactName=ContactNameData{firstName='sergey1518156156395', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=71, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=77, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building в„–0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=76, contactName=ContactNameData{firstName='sergey1518080204141', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=83, contactName=ContactNameData{firstName='sergey1518158033162', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}]&gt;&#10;     but: was &lt;[ContactData{id=70, contactName=ContactNameData{firstName='vasiya', lastName='ivanov1', company=''}, contactPhone=ContactPhoneData{email='1ya@yandex.ru', address='Moscow, Red square, building №1', allPhones='+79031111111&#10;+79042222221&#10;+79053333331'}}, ContactData{id=79, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building в„–2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=82, contactName=ContactNameData{firstName='sergey1518157919243', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=75, contactName=ContactNameData{firstName='sergey1518079738842', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=72, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=69, contactName=ContactNameData{firstName='vasiya', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=74, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=81, contactName=ContactNameData{firstName='sergey1518156156395', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=77, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building в„–0', allPhones='+79031111110&#10;+79042222220&#10;+79053333330'}}, ContactData{id=71, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112&#10;+79042222222&#10;+79053333332'}}, ContactData{id=76, contactName=ContactNameData{firstName='sergey1518080204141', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}, ContactData{id=83, contactName=ContactNameData{firstName='sergey1518158033162', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111&#10;+79042222222'}}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;[ContactData{id=79, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building в„–2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=82, contactName=ContactNameData{firstName='sergey1518157919243', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=70, contactName=ContactNameData{firstName='vasiya', lastName='ivanov1', company=''}, contactPhone=ContactPhoneData{email='1ya@yandex.ru', address='Moscow, Red square, building №1', allPhones=''}}, ContactData{id=75, contactName=ContactNameData{firstName='sergey1518079738842', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=69, contactName=ContactNameData{firstName='vasiya', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=74, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=72, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=81, contactName=ContactNameData{firstName='sergey1518156156395', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=71, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=77, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building в„–0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=76, contactName=ContactNameData{firstName='sergey1518080204141', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=83, contactName=ContactNameData{firstName='sergey1518158033162', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}]&gt;
+     but: was &lt;[ContactData{id=70, contactName=ContactNameData{firstName='vasiya', lastName='ivanov1', company=''}, contactPhone=ContactPhoneData{email='1ya@yandex.ru', address='Moscow, Red square, building №1', allPhones='+79031111111
++79042222221
++79053333331'}}, ContactData{id=79, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building в„–2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=82, contactName=ContactNameData{firstName='sergey1518157919243', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=75, contactName=ContactNameData{firstName='sergey1518079738842', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=72, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=69, contactName=ContactNameData{firstName='vasiya', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building №0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=74, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=81, contactName=ContactNameData{firstName='sergey1518156156395', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=77, contactName=ContactNameData{firstName='sergey0', lastName='ivanov0', company=''}, contactPhone=ContactPhoneData{email='0ya@yandex.ru', address='Moscow, Red square, building в„–0', allPhones='+79031111110
++79042222220
++79053333330'}}, ContactData{id=71, contactName=ContactNameData{firstName='sergey2', lastName='ivanov2', company=''}, contactPhone=ContactPhoneData{email='2ya@yandex.ru', address='Moscow, Red square, building №2', allPhones='+79031111112
++79042222222
++79053333332'}}, ContactData{id=76, contactName=ContactNameData{firstName='sergey1518080204141', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}, ContactData{id=83, contactName=ContactNameData{firstName='sergey1518158033162', lastName='ivanov', company=''}, contactPhone=ContactPhoneData{email='', address='', allPhones='+79031111111
++79042222222'}}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at TestCases1.EditContactTest.testEditFirstContact(EditContactTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

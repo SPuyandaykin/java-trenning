@@ -19,8 +19,13 @@ public class DeleteContactTest extends TestBase{
         app.goTo().home();
         if(!app.contact().size()) {
             ContactData contactData = new ContactData()
-                    .withContactName(new ContactNameData("sergey", "ivanov", "Java Corporation"))
-                    .withContactPhone(new ContactPhoneData("+79031111111", "+79042222222"));
+                    .withContactName(new ContactNameData(
+                            app.readProperty("contact.FirstName")+System.currentTimeMillis(),
+                            app.readProperty("contact.LastName"),
+                            app.readProperty("contact.Company")))
+                    .withContactPhone(new ContactPhoneData(
+                            app.readProperty("contact.PhoneHome"),
+                            app.readProperty("contact.PhoneMobile")));
             app.contact().create(contactData);
         }
     }

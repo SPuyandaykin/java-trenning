@@ -11,9 +11,13 @@ public class AddNewContactTest extends TestBase{
     public void testAddNewContact() {
         app.goTo().home();
         Contacts before = app.contact().all();
-        ContactNameData contactName = new ContactNameData("sergey"+System.currentTimeMillis(),
-                "ivanov", "Java Corporation");
-        ContactPhoneData contactPhone = new ContactPhoneData ("+79031111111", "+79042222222");
+        ContactNameData contactName = new ContactNameData(
+                app.readProperty("contact.FirstName")+System.currentTimeMillis(),
+                app.readProperty("contact.LastName"),
+                app.readProperty("contact.Company"));
+        ContactPhoneData contactPhone = new ContactPhoneData (
+                app.readProperty("contact.PhoneHome"),
+                app.readProperty("contact.PhoneMobile"));
         ContactData contact = new ContactData().withContactName(contactName).withContactPhone(contactPhone);
         app.contact().create(contact);
 

@@ -13,9 +13,9 @@ public class AddNewGroupTest extends TestBase{
     public void testAddNewGroup() {
         app.group().page();
         Groups before = app.group().all();
-        GroupData group = new GroupData().withName("TestGroup"+System.currentTimeMillis())
-                .withHeader("test header")
-                .withFooter("test footer");
+        GroupData group = new GroupData().withName(app.readProperty("group.name")+System.currentTimeMillis())
+                .withHeader(app.readProperty("group.header"))
+                .withFooter(app.readProperty("group.footer"));
         app.group().create(group);
 
         assertThat(app.group().count(), equalTo(before.size()+1));

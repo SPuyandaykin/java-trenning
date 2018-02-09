@@ -21,9 +21,9 @@ public class DeleteGroupTest extends TestBase{
     public void insurePreconditions(){
         app.group().page();
         if(!app.group().size())
-            app.group().create(new GroupData().withName("TestGroup"+System.currentTimeMillis())
-                    .withHeader("test header")
-                    .withFooter("test footer"));
+            app.group().create(new GroupData().withName(app.readProperty("group.name")+System.currentTimeMillis())
+                    .withHeader(app.readProperty("group.header"))
+                    .withFooter(app.readProperty("group.footer")));
     }
 
     @Test

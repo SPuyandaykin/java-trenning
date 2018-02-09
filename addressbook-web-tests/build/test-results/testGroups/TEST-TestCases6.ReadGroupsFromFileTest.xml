@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCases6.ReadGroupsFromFileTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-09T10:06:38" hostname="s-puyandaykin-n" time="3.793">
+  <properties/>
+  <testcase name="testReadGroupsFromFile[0](GroupData{name='test 0'})" classname="TestCases6.ReadGroupsFromFileTest" time="2.052"/>
+  <testcase name="testReadGroupsFromFile[1](GroupData{name='test 1'})" classname="TestCases6.ReadGroupsFromFileTest" time="0.847"/>
+  <testcase name="testReadGroupsFromFile[2](GroupData{name='test 2'})" classname="TestCases6.ReadGroupsFromFileTest" time="0.893"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Security framework of XStream not initialized, XStream is probably vulnerable.
+]]></system-err>
+</testsuite>

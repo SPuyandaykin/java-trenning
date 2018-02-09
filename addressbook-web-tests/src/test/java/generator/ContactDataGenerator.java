@@ -11,14 +11,15 @@ import model.ContactNameData;
 import model.ContactPhoneData;
 import model.GroupData;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class ContactDataGenerator {
+
+    private Properties properties;
+
     @Parameter(names = "-c", description = "Contact count")
     public int count;
 
@@ -39,6 +40,8 @@ public class ContactDataGenerator {
     }
 
     private void run() throws IOException {
+        properties = new Properties();
+        properties.load(new FileReader(new File("src/test/resources/local.properties")));
         List<ContactData> contacts = generateContacts(count);
         String fileType = getFileFormat();
         if (fileType.equals("csv")) {
@@ -56,18 +59,18 @@ public class ContactDataGenerator {
         Gson gson = new GsonBuilder().setPrettyPrinting()
                 .excludeFieldsWithoutExposeAnnotation().create();
         String json = gson.toJson(contacts);
-        Writer writer = new FileWriter(file);
-        writer.write(json);
-        writer.close();
+        try(Writer writer = new FileWriter(file)) {
+            writer.write(json);
+        }
     }
 
     private void saveAsXML(List<ContactData> contacts, File file) throws IOException {
         XStream xstream = new XStream();
         xstream.processAnnotations(ContactData.class);
         String xml = xstream.toXML(contacts);
-        Writer writer = new FileWriter(file);
-        writer.write(xml);
-        writer.close();
+        try(Writer writer = new FileWriter(file)) {
+            writer.write(xml);
+        }
     }
 
     private String getFileFormat(){
@@ -79,31 +82,35 @@ public class ContactDataGenerator {
         List<ContactData> contacts = new ArrayList<ContactData>();
         for(int i = 0; i < count; i++) {
             String sNum = Integer.toString(i);
-            ContactNameData contactName = new ContactNameData("sergey"+sNum,
-                    "ivanov"+sNum, "Java Corporation"+sNum);
-            ContactPhoneData contactPhone = new ContactPhoneData ("+7903111111"+sNum, "+7904222222"+sNum,
-                    "+7905333333"+sNum, sNum+"ya@yandex.ru", "Moscow, Red square, building №"+sNum);
+            ContactNameData contactName = new ContactNameData(
+                    properties.getProperty("contact.FirstName")+sNum,
+                    properties.getProperty("contact.LastName")+sNum,
+                    properties.getProperty("contact.Company")+sNum);
+            ContactPhoneData contactPhone = new ContactPhoneData (
+                    properties.getProperty("contact.PhoneHome")+sNum,
+                    properties.getProperty("contact.PhoneMobile")+sNum,
+                    properties.getProperty("contact.PhoneWork")+sNum,
+                    sNum+properties.getProperty("contact.Email"),
+                    properties.getProperty("contact.Address")+sNum);
             contacts.add(new ContactData().withContactName(contactName).withContactPhone(contactPhone));
         }
         return contacts;
     }
 
     private void saveAsCSV(List<ContactData> contacts, File file) throws IOException {
-        Writer writer = new FileWriter(file);
-        for (ContactData contact : contacts) {
-
-            writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s\n",
-                    contact.getContactName().getFirstName(),
-                    contact.getContactName().getLastName(),
-                    contact.getContactName().getCompany(),
-                    contact.getContactPhone().getPhoneHome(),
-                    contact.getContactPhone().getPhoneMobile(),
-                    contact.getContactPhone().getWorkMobile(),
-                    contact.getContactPhone().getEmail(),
-                    contact.getContactPhone().getAddress()
-            ));
-
+        try(Writer writer = new FileWriter(file)) {
+            for (ContactData contact : contacts) {
+                writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s\n",
+                        contact.getContactName().getFirstName(),
+                        contact.getContactName().getLastName(),
+                        contact.getContactName().getCompany(),
+                        contact.getContactPhone().getPhoneHome(),
+                        contact.getContactPhone().getPhoneMobile(),
+                        contact.getContactPhone().getWorkMobile(),
+                        contact.getContactPhone().getEmail(),
+                        contact.getContactPhone().getAddress()
+                ));
+            }
         }
-        writer.close();
     }
 }
