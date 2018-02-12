@@ -1,6 +1,7 @@
 package model;
 
 import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import unilities.StringUtilities;
 
 import java.util.Arrays;
@@ -18,7 +19,7 @@ public class ContactPhoneData {
     private String email = "";
     @Expose
     private String address = "";
-    @Expose
+    @XStreamOmitField
     private String allPhones = "";
 
     public ContactPhoneData() {
@@ -79,7 +80,7 @@ public class ContactPhoneData {
         return Objects.hash(email, address, allPhones);
     }
 
-    private String mergePhones (ContactPhoneData contactPhone){
+    public String mergePhones (ContactPhoneData contactPhone){
         StringUtilities strUtility = new StringUtilities();
         return Arrays.asList(contactPhone.phoneHome, contactPhone.phoneMobile,contactPhone.workMobile)
                 .stream().filter((s) -> ! s.equals(""))

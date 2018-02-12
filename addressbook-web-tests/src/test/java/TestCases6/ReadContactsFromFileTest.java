@@ -56,16 +56,16 @@ public class ReadContactsFromFileTest extends TestBase {
         }
     }
 
-    @Test(dataProvider = "validGroupsFromJSON")
-    public void testReadContactsFromFile(ContactData contact ) {
+    @Test(dataProvider = "validContactsFromXML")
+    public void testReadContactsFromFile(ContactData newContact ) {
         app.goTo().home();
         Contacts before = app.contact().all();
-        app.contact().create(contact);
+        app.contact().create(newContact);
 
         assertThat(app.contact().count(), equalTo(before.size()+1));
         Contacts after = app.contact().all();
         assertThat(after, equalTo(
-                before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+                before.withAdded(newContact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 
     }
 

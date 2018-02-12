@@ -63,6 +63,9 @@ public class ContactHelper extends HelperBase {
         FillContactForms(contactData);
         SubmitContactCreating();
         contactCache = null;
+
+        ContactPhoneData phoneData = contactData.getContactPhone();
+        phoneData.setAllPhones(phoneData.mergePhones(phoneData));
         ReturnToHomePage();
     }
 

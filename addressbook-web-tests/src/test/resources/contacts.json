@@ -10,8 +10,7 @@
       "phoneMobile": "+79042222220",
       "workMobile": "+79053333330",
       "email": "0ya@yandex.ru",
-      "address": "Moscow, Red square, building 0",
-      "allPhones": "+79031111110\n+79042222220\n+79053333330"
+      "address": "Moscow, Red square, building 0"
     }
   },
   {
@@ -25,8 +24,7 @@
       "phoneMobile": "+79042222221",
       "workMobile": "+79053333331",
       "email": "1ya@yandex.ru",
-      "address": "Moscow, Red square, building 1",
-      "allPhones": "+79031111111\n+79042222221\n+79053333331"
+      "address": "Moscow, Red square, building 1"
     }
   },
   {
@@ -40,8 +38,7 @@
       "phoneMobile": "+79042222222",
       "workMobile": "+79053333332",
       "email": "2ya@yandex.ru",
-      "address": "Moscow, Red square, building 2",
-      "allPhones": "+79031111112\n+79042222222\n+79053333332"
+      "address": "Moscow, Red square, building 2"
     }
   }
 ]
