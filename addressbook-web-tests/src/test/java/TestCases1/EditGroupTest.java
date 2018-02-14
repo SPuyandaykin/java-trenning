@@ -20,27 +20,28 @@ public class EditGroupTest extends TestBase{
 
     @BeforeMethod
     public void insurePreconditions(){
-        app.group().page();
-        if(!app.group().size())
-            if(!app.group().size())
-                app.group().create(new GroupData().withName(app.readProperty("group.name")+System.currentTimeMillis())
-                        .withHeader(app.readProperty("group.header"))
-                        .withFooter(app.readProperty("group.footer")));
+        if(app.db().groups().size()==0){
+            app.group().page();
+            app.group().create(new GroupData().withName(app.readProperty("group.name")+System.currentTimeMillis())
+                    .withHeader(app.readProperty("group.header"))
+                    .withFooter(app.readProperty("group.footer")));
+        }
     }
 
     @Test
     public void testEditFirstGroup(){
-        Groups before = app.group().all();
+        Groups before = app.db().groups();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData()
                 .withId(modifiedGroup.getId())
                 .withName(modifiedGroup.getName())
                 .withHeader(app.readProperty("group.header")+"2")
                 .withFooter(app.readProperty("group.footer")+"2");
-        app.group().modify(group);
 
+        app.group().page();
+        app.group().modify(group);
         assertThat(app.group().count(), equalTo(before.size()));
-        Groups after = app.group().all();
+        Groups after = app.db().groups();
         assertThat(after, equalTo(before.withOut(modifiedGroup).withAdded(group)));
     }
 

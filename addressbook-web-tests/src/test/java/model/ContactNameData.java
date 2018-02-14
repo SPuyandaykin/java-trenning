@@ -1,18 +1,35 @@
 package model;
 
 import com.google.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.File;
 import java.util.Objects;
 
+@Entity
+@Table(name="addressbook")
 public class ContactNameData {
     @Expose
+    @Column(name="firstname")
+    @Type(type = "text")
     private String firstName;
+
     @Expose
+    @Column(name="lastname")
+    @Type(type = "text")
     private final String lastName;
+
     @Expose
+    @Column(name="company")
+    @Type(type = "text")
     private final String company;
-    private File photo;
+
+    @Column(name="photo")
+    @Type(type = "text")
+    private String photo;
 
     public ContactNameData(String firstName, String lastName, String company) {
         this.firstName = firstName;
@@ -68,15 +85,15 @@ public class ContactNameData {
     }
 
     public ContactNameData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
     public void setPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
     }
-    public File getPhoto() {
 
-        return photo;
+    public File getPhoto() {
+        return new File (photo);
     }
 }

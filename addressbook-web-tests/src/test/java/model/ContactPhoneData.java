@@ -2,24 +2,47 @@ package model;
 
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 import unilities.StringUtilities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@Entity
+@Table(name="addressbook")
 public class ContactPhoneData {
     @Expose
+    @Column(name="home")
+    @Type(type = "text")
     private String phoneHome = "";
+
     @Expose
+    @Column(name="mobile")
+    @Type(type = "text")
     private String phoneMobile = "";
+
     @Expose
+    @Column(name="work")
+    @Type(type = "text")
     private String workMobile = "";
+
     @Expose
+    @Column(name="email")
+    @Type(type = "text")
     private String email = "";
+
     @Expose
+    @Column(name="address")
+    @Type(type = "text")
     private String address = "";
+
     @XStreamOmitField
+    @Transient
     private String allPhones = "";
 
     public ContactPhoneData() {
