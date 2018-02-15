@@ -1,44 +1,32 @@
 <list>
   <model.ContactData>
-    <contactName>
-      <firstName>Sergey0</firstName>
-      <lastName>Ivanov0</lastName>
-      <company>javaCorp0</company>
-    </contactName>
-    <contactPhone>
-      <phoneHome>+79031111110</phoneHome>
-      <phoneMobile>+79042222220</phoneMobile>
-      <workMobile>+79053333330</workMobile>
-      <email>0ya@yandex.ru</email>
-      <address>Moscow, Red square, building 0</address>
-    </contactPhone>
+    <firstName>Sergey0</firstName>
+    <lastName>Ivanov0</lastName>
+    <company>javaCorp0</company>
+    <phoneHome>+79031111110</phoneHome>
+    <phoneMobile>+79042222220</phoneMobile>
+    <workMobile>+79053333330</workMobile>
+    <email>0ya@yandex.ru</email>
+    <address>Moscow, Red square, building 0</address>
   </model.ContactData>
   <model.ContactData>
-    <contactName>
-      <firstName>Sergey1</firstName>
-      <lastName>Ivanov1</lastName>
-      <company>javaCorp1</company>
-    </contactName>
-    <contactPhone>
-      <phoneHome>+79031111111</phoneHome>
-      <phoneMobile>+79042222221</phoneMobile>
-      <workMobile>+79053333331</workMobile>
-      <email>1ya@yandex.ru</email>
-      <address>Moscow, Red square, building 1</address>
-    </contactPhone>
+    <firstName>Sergey1</firstName>
+    <lastName>Ivanov1</lastName>
+    <company>javaCorp1</company>
+    <phoneHome>+79031111111</phoneHome>
+    <phoneMobile>+79042222221</phoneMobile>
+    <workMobile>+79053333331</workMobile>
+    <email>1ya@yandex.ru</email>
+    <address>Moscow, Red square, building 1</address>
   </model.ContactData>
   <model.ContactData>
-    <contactName>
-      <firstName>Sergey2</firstName>
-      <lastName>Ivanov2</lastName>
-      <company>javaCorp2</company>
-    </contactName>
-    <contactPhone>
-      <phoneHome>+79031111112</phoneHome>
-      <phoneMobile>+79042222222</phoneMobile>
-      <workMobile>+79053333332</workMobile>
-      <email>2ya@yandex.ru</email>
-      <address>Moscow, Red square, building 2</address>
-    </contactPhone>
+    <firstName>Sergey2</firstName>
+    <lastName>Ivanov2</lastName>
+    <company>javaCorp2</company>
+    <phoneHome>+79031111112</phoneHome>
+    <phoneMobile>+79042222222</phoneMobile>
+    <workMobile>+79053333332</workMobile>
+    <email>2ya@yandex.ru</email>
+    <address>Moscow, Red square, building 2</address>
   </model.ContactData>
 </list>

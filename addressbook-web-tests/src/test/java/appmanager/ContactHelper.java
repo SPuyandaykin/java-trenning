@@ -65,13 +65,15 @@ public class ContactHelper extends HelperBase {
         contactCache = null;
 
         ContactPhoneData phoneData = contactData.getContactPhone();
-        phoneData.setAllPhones(phoneData.mergePhones(phoneData));
+        contactData.setAllPhones(contactData.mergePhones(phoneData));
         ReturnToHomePage();
     }
 
+
+
     public void FillContactForms (ContactData contactData){
-        FillNameFields(contactData.getContactName());
-        FillPhoneFields(contactData.getContactPhone());
+        FillNameFields(contactData);
+        FillPhoneFields(contactData);
     }
 
     public void ReturnToHomePage() {
@@ -110,12 +112,13 @@ public class ContactHelper extends HelperBase {
                     cells.get(1).getText(), "");
 
             ContactPhoneData contactPhone = new ContactPhoneData();
-            contactPhone.setAllPhones(cells.get(5).getText());
+ //           contactPhone.setAllPhones(cells.get(5).getText());
             contactPhone.setEmail(cells.get(4).getText());
             contactPhone.setAddress(cells.get(3).getText());
 
             ContactData group = new ContactData()
                     .withId(id).withContactName(contactName).withContactPhone(contactPhone);
+            group.setAllPhones(cells.get(5).getText());
             contacts.add(group);
         }
         return contacts;
@@ -167,19 +170,19 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public void FillPhoneFields(ContactPhoneData contactPhoneData) {
-        type(By.name("home"), contactPhoneData.getPhoneHome());
-        type(By.name("mobile"), contactPhoneData.getPhoneMobile());
-        type(By.name("work"), contactPhoneData.getWorkMobile());
-        type(By.name("email"), contactPhoneData.getEmail());
-        type(By.name("address"), contactPhoneData.getAddress());
+    public void FillPhoneFields(ContactData contactData) {
+        type(By.name("home"), contactData.getPhoneHome());
+        type(By.name("mobile"), contactData.getPhoneMobile());
+        type(By.name("work"), contactData.getWorkMobile());
+        type(By.name("email"), contactData.getEmail());
+        type(By.name("address"), contactData.getAddress());
     }
 
-    public void FillNameFields(ContactNameData contactNameData) {
-        type(By.name("firstname"), contactNameData.getFirstName());
-        type(By.name("lastname"), contactNameData.getLastName());
-        type(By.name("company"), contactNameData.getCompany());
-        attach(By.name("photo"), contactNameData.getPhoto());
+    public void FillNameFields(ContactData contactData) {
+        type(By.name("firstname"), contactData.getFirstName());
+        type(By.name("lastname"), contactData.getLastName());
+        type(By.name("company"), contactData.getCompany());
+//        attach(By.name("photo"), contactNameData.getPhoto());
     }
 
     public ContactData infoFromContactForm(ContactData contact) {

@@ -59,11 +59,11 @@ public class ReadContactsFromFileTest extends TestBase {
     @Test(dataProvider = "validContactsFromXML")
     public void testReadContactsFromFile(ContactData newContact ) {
         app.goTo().home();
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         app.contact().create(newContact);
 
         assertThat(app.contact().count(), equalTo(before.size()+1));
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after, equalTo(
                 before.withAdded(newContact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 

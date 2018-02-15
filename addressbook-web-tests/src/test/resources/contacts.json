@@ -1,44 +1,32 @@
 [
   {
-    "contactName": {
-      "firstName": "Sergey0",
-      "lastName": "Ivanov0",
-      "company": "javaCorp0"
-    },
-    "contactPhone": {
-      "phoneHome": "+79031111110",
-      "phoneMobile": "+79042222220",
-      "workMobile": "+79053333330",
-      "email": "0ya@yandex.ru",
-      "address": "Moscow, Red square, building 0"
-    }
+    "firstName": "Sergey0",
+    "lastName": "Ivanov0",
+    "company": "javaCorp0",
+    "phoneHome": "+79031111110",
+    "phoneMobile": "+79042222220",
+    "workMobile": "+79053333330",
+    "email": "0ya@yandex.ru",
+    "address": "Moscow, Red square, building 0"
   },
   {
-    "contactName": {
-      "firstName": "Sergey1",
-      "lastName": "Ivanov1",
-      "company": "javaCorp1"
-    },
-    "contactPhone": {
-      "phoneHome": "+79031111111",
-      "phoneMobile": "+79042222221",
-      "workMobile": "+79053333331",
-      "email": "1ya@yandex.ru",
-      "address": "Moscow, Red square, building 1"
-    }
+    "firstName": "Sergey1",
+    "lastName": "Ivanov1",
+    "company": "javaCorp1",
+    "phoneHome": "+79031111111",
+    "phoneMobile": "+79042222221",
+    "workMobile": "+79053333331",
+    "email": "1ya@yandex.ru",
+    "address": "Moscow, Red square, building 1"
   },
   {
-    "contactName": {
-      "firstName": "Sergey2",
-      "lastName": "Ivanov2",
-      "company": "javaCorp2"
-    },
-    "contactPhone": {
-      "phoneHome": "+79031111112",
-      "phoneMobile": "+79042222222",
-      "workMobile": "+79053333332",
-      "email": "2ya@yandex.ru",
-      "address": "Moscow, Red square, building 2"
-    }
+    "firstName": "Sergey2",
+    "lastName": "Ivanov2",
+    "company": "javaCorp2",
+    "phoneHome": "+79031111112",
+    "phoneMobile": "+79042222222",
+    "workMobile": "+79053333332",
+    "email": "2ya@yandex.ru",
+    "address": "Moscow, Red square, building 2"
   }
 ]

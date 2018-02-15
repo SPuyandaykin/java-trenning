@@ -10,7 +10,7 @@ public class AddNewContactTest extends TestBase{
     @Test
     public void testAddNewContact() {
         app.goTo().home();
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         ContactNameData contactName = new ContactNameData(
                 app.readProperty("contact.FirstName")+System.currentTimeMillis(),
                 app.readProperty("contact.LastName"),
@@ -22,7 +22,7 @@ public class AddNewContactTest extends TestBase{
         app.contact().create(contact);
 
         assertThat(app.contact().count(), equalTo(before.size()+1));
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 

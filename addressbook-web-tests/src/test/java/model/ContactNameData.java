@@ -5,6 +5,7 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.File;
 import java.util.Objects;
@@ -12,19 +13,17 @@ import java.util.Objects;
 @Entity
 @Table(name="addressbook")
 public class ContactNameData {
+
     @Expose
     @Column(name="firstname")
-    @Type(type = "text")
     private String firstName;
 
     @Expose
     @Column(name="lastname")
-    @Type(type = "text")
     private final String lastName;
 
     @Expose
     @Column(name="company")
-    @Type(type = "text")
     private final String company;
 
     @Column(name="photo")
