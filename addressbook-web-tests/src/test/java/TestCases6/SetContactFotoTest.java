@@ -23,7 +23,7 @@ public class SetContactFotoTest extends TestBase  {
                 "ivanov", "Java Corporation").withPhoto(photo);
         ContactPhoneData contactPhone = new ContactPhoneData ("+79031111111", "+79042222222");
         ContactData contact = new ContactData().withContactName(contactName).withContactPhone(contactPhone);
-        app.contact().create(contact);
+        app.contact().create(contact, true);
 
         assertThat(app.contact().count(), equalTo(before.size()+1));
         Contacts after = app.contact().all();

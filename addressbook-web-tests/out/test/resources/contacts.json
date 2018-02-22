@@ -7,7 +7,15 @@
     "phoneMobile": "+79042222220",
     "workMobile": "+79053333330",
     "email": "0ya@yandex.ru",
-    "address": "Moscow, Red square, building 0"
+    "address": "Moscow, Red square, building 0",
+    "groups": [
+      {
+        "id": 84,
+        "name": "test 1",
+        "header": "header 1",
+        "footer": "footer 1"
+      }
+    ]
   },
   {
     "firstName": "Sergey1",
@@ -17,7 +25,15 @@
     "phoneMobile": "+79042222221",
     "workMobile": "+79053333331",
     "email": "1ya@yandex.ru",
-    "address": "Moscow, Red square, building 1"
+    "address": "Moscow, Red square, building 1",
+    "groups": [
+      {
+        "id": 84,
+        "name": "test 1",
+        "header": "header 1",
+        "footer": "footer 1"
+      }
+    ]
   },
   {
     "firstName": "Sergey2",
@@ -27,6 +43,14 @@
     "phoneMobile": "+79042222222",
     "workMobile": "+79053333332",
     "email": "2ya@yandex.ru",
-    "address": "Moscow, Red square, building 2"
+    "address": "Moscow, Red square, building 2",
+    "groups": [
+      {
+        "id": 84,
+        "name": "test 1",
+        "header": "header 1",
+        "footer": "footer 1"
+      }
+    ]
   }
 ]

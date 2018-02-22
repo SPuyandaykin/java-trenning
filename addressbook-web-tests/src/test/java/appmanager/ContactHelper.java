@@ -1,17 +1,13 @@
 package appmanager;
 
-import model.ContactData;
-import model.ContactNameData;
-import model.ContactPhoneData;
-import model.Contacts;
+import model.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class ContactHelper extends HelperBase {
 
@@ -58,17 +54,74 @@ public class ContactHelper extends HelperBase {
         ReturnToHomePage();
     }*/
 
-    public void create(ContactData contactData) {
+    public void create(ContactData contactData, boolean creation) {
         CreateNewContact();
         FillContactForms(contactData);
+        if(creation){
+            if(contactData.getGroups().size()>0){
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+                new Select(wd.findElement(By.name("new_group")))
+                        .selectByVisibleText(contactData.getGroups().iterator().next().getName());
+           }else{
+                Assert.assertTrue(isElementPresent(By.name("new_group")));
+            }
+        }
+
         SubmitContactCreating();
         contactCache = null;
 
         ContactPhoneData phoneData = contactData.getContactPhone();
         contactData.setAllPhones(contactData.mergePhones(phoneData));
         ReturnToHomePage();
+
+        if(!creation)
+            SetUpGroups(contactData.getFirstName(), contactData.getGroups());
     }
 
+    private void SetUpGroups(String firstName, Groups groups) {
+        Iterator <GroupData> iterator = groups.iterator();
+        while (iterator.hasNext()) {
+            SelectGroup(firstName,iterator.next().getName());
+            ReturnToMainPage();
+            new Select(wd.findElement(By.name("group"))).selectByVisibleText("[all]");
+            SelectGroupFilter("[all]");
+        }
+    }
+
+    public void SelectGroupFilter(String groupName){
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText(groupName);
+    }
+
+    public void UnLinkGroup(String groupName, String groupForUnLink) {
+        ReturnToMainPage();
+        SelectGroupFilter(groupForUnLink);
+        removeGroup(groupName);
+    }
+
+    public void removeGroup(String groupName){
+        selectByName(groupName);
+        wd.findElement(By.xpath("//input[@name='remove']")).click();
+    }
+
+    public void SelectGroup(String firstName, String groupName){
+        selectByName(firstName);
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(groupName);
+        wd.findElement(By.xpath("//input[@type='submit']")).click();
+    }
+
+    public void DeleteAllContact() {
+        String contactsNumber = wd.findElement(By.xpath("//span[@id='search_count']")).getText();
+        if(contactsNumber.equals("0"))
+            return;
+
+        wd.findElement(By.xpath("//input[@id='MassCB']")).click();
+        deleteSelectedContact();
+    }
+
+    private void selectByName(String firstName) {
+        String spath = "//td[contains(text(),'" + firstName + "')]/parent::node()/td/input";
+        wd.findElement(By.xpath(spath)).click();
+    }
 
 
     public void FillContactForms (ContactData contactData){
@@ -78,6 +131,10 @@ public class ContactHelper extends HelperBase {
 
     public void ReturnToHomePage() {
         click(By.linkText("home page"));
+    }
+
+    public void ReturnToMainPage() {
+        click(By.linkText("home"));
     }
 
     public List<ContactData> list() {
@@ -148,6 +205,7 @@ public class ContactHelper extends HelperBase {
 
     public void selectById(int id) {
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+        System.out.println("id is: "+id);
     }
 
     public void delete(int index) {
@@ -204,5 +262,7 @@ public class ContactHelper extends HelperBase {
                 .withContactName(contactName).withContactPhone(contactPhone);
 
     }
+
+
 }
 

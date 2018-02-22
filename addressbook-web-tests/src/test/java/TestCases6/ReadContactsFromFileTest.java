@@ -60,7 +60,7 @@ public class ReadContactsFromFileTest extends TestBase {
     public void testReadContactsFromFile(ContactData newContact ) {
         app.goTo().home();
         Contacts before = app.db().contacts();
-        app.contact().create(newContact);
+        app.contact().create(newContact, true);
 
         assertThat(app.contact().count(), equalTo(before.size()+1));
         Contacts after = app.db().contacts();

@@ -138,4 +138,16 @@ public class GroupHelper extends HelperBase {
     public int count() {
         return wd.findElements(By.name("selected[]")).size();
     }
+
+    public void DeleteGroupNamed(String groupName) {
+        page();
+        SelectGroupByName(groupName);
+        DeleteGroup();
+        groupCache = null;
+
+    }
+
+    private void SelectGroupByName(String groupName) {
+        wd.findElement(By.xpath("//span[contains(text(),'" + groupName + "')]/input")).click();
+    }
 }

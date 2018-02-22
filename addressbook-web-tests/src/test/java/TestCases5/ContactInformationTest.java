@@ -27,7 +27,7 @@ public class ContactInformationTest extends TestBase {
             ContactPhoneData contactPhone = new ContactPhoneData ("+7(903)1111111", "",
                     "+7905-333-33-33", "ya@yandex.ru", "Moscow, Red square");
             ContactData contact = new ContactData().withContactName(contactName).withContactPhone(contactPhone);
-            app.contact().create(contact);
+            app.contact().create(contact, true);
         }
     }
 

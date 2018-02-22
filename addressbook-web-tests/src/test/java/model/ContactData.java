@@ -8,7 +8,9 @@ import unilities.StringUtilities;
 import javax.persistence.*;
 import java.io.File;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Entity
@@ -56,9 +58,53 @@ public class ContactData {
     @Type(type = "text")
     private String address = "";
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(company, that.company) &&
+                Objects.equals(phoneHome, that.phoneHome) &&
+                Objects.equals(phoneMobile, that.phoneMobile) &&
+                Objects.equals(workMobile, that.workMobile) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(groups, that.groups) &&
+                Objects.equals(allPhones, that.allPhones);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, firstName, lastName, company, phoneHome, phoneMobile, workMobile, email, address, groups, allPhones);
+    }
+
+    @Expose
+    @ManyToMany (fetch = FetchType.EAGER)
+    @JoinTable(name="address_in_groups",
+            joinColumns = @JoinColumn(name="id"), inverseJoinColumns = @JoinColumn(name="group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
+
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                '}';
+    }
+
     @XStreamOmitField
     @Transient
     private String allPhones = "";
+
+    public Groups getGroups() {
+        return new Groups(groups);
+    }
+
 
     @Column(name="photo")
     @Type(type = "text")
@@ -72,14 +118,6 @@ public class ContactData {
     @Transient
     private ContactPhoneData contactPhone;
 
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id=" + id +
-                ", contactName=" + contactName +
-                ", contactPhone=" + contactPhone +
-                '}';
-    }
     public int getId() { return id; }
 
     public ContactNameData getContactName() {
@@ -157,33 +195,26 @@ public class ContactData {
         return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id &&
-                Objects.equals(firstName, that.firstName) &&
-                Objects.equals(lastName, that.lastName) &&
-                Objects.equals(company, that.company) &&
-                Objects.equals(phoneHome, that.phoneHome) &&
-                Objects.equals(phoneMobile, that.phoneMobile) &&
-                Objects.equals(workMobile, that.workMobile) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(address, that.address);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, firstName, lastName, company, phoneHome, phoneMobile, workMobile, email, address);
-    }
-
     public ContactData withContactName(ContactNameData contactName) {
         firstName = contactName.getFirstName();
         lastName = contactName.getLastName();
         company = contactName.getCompany();
         this.contactName = contactName;
+        return this;
+    }
+
+    public ContactData withFirstName(String name) {
+        this.firstName = name;
+        return this;
+    }
+
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
+    }
+
+    public ContactData addGroups (Groups gr) {
+        groups = gr;
         return this;
     }
 }

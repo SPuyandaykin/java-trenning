@@ -1,11 +1,9 @@
 package model;
 
 import com.google.common.collect.ForwardingSet;
+import org.testng.Assert;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Groups extends ForwardingSet<GroupData>{
 
@@ -38,6 +36,30 @@ public class Groups extends ForwardingSet<GroupData>{
         Groups groups = new Groups(this);
         groups.remove(group);
         return groups;
+    }
+
+    public String FindNotAddedGroup(Groups contactGroups){
+        Groups groups = new Groups(this);
+        System.out.println("group from base is: " + groups);
+        System.out.println("contact group is: " + contactGroups);
+
+        Iterator<GroupData> iteratorBase = groups.iterator();
+        Iterator<GroupData> iteratorContact = contactGroups.iterator();
+        while (iteratorBase.hasNext()) {
+            boolean groupIsNotFound = true;
+            String groupBaseName = iteratorBase.next().getName();
+            while (iteratorContact.hasNext()) {
+                String groupContactName = iteratorContact.next().getName();
+                if(groupBaseName.equals(groupContactName)) {
+                    groupIsNotFound = false;
+                    break;
+                }
+            }
+            if (groupIsNotFound)
+                return groupBaseName;
+        }
+
+        return "";
     }
 
 }

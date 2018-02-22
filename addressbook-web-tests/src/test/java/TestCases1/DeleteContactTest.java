@@ -26,7 +26,7 @@ public class DeleteContactTest extends TestBase{
                         .withContactPhone(new ContactPhoneData(
                                 app.readProperty("contact.PhoneHome"),
                                 app.readProperty("contact.PhoneMobile")));
-            app.contact().create(contactData);
+            app.contact().create(contactData, true);
         }
     }
 

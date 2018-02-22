@@ -1,15 +1,15 @@
 package generator;
 
+import appmanager.ApplicationManager;
+import appmanager.DBHelper;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
-import model.ContactData;
-import model.ContactNameData;
-import model.ContactPhoneData;
-import model.GroupData;
+import model.*;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -80,7 +80,12 @@ public class ContactDataGenerator {
 
     private List<ContactData> generateContacts(int count) {
         List<ContactData> contacts = new ArrayList<ContactData>();
+
+        DBHelper dbHelper;
+        dbHelper = new DBHelper();
+
         for(int i = 0; i < count; i++) {
+            Groups groups = dbHelper.groups();
             String sNum = Integer.toString(i);
             ContactNameData contactName = new ContactNameData(
                     properties.getProperty("contact.FirstName")+sNum,
@@ -92,7 +97,9 @@ public class ContactDataGenerator {
                     properties.getProperty("contact.PhoneWork")+sNum,
                     sNum+properties.getProperty("contact.Email"),
                     properties.getProperty("contact.Address")+sNum);
-            contacts.add(new ContactData().withContactName(contactName).withContactPhone(contactPhone));
+//            contacts.add(new ContactData().withContactName(contactName).withContactPhone(contactPhone).inGroup(groups.iterator().next()));
+            ContactData contact = new ContactData().withContactName(contactName).withContactPhone(contactPhone).addGroups(groups);
+            contacts.add(contact);
         }
         return contacts;
     }
