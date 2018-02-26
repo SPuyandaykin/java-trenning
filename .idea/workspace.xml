@@ -2,47 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f1db5e-0858-4d30-8ff2-7330556967ac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/AddContactsToGroupTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/DeleteContactsFromGroupTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mantis-tests/src/main/java/appmanager/ApplicationManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mantis-tests/src/main/java/tests/TestBase.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mantis-tests/src/main/resources/local.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/4.3.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/4.3.1/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/AddNewContactTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/AddNewContactTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/AddNewGroupTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/AddNewGroupTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/DeleteContactTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/DeleteContactTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/DeleteGroupTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/DeleteGroupTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/EditContactTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/EditContactTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/EditGroupTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/EditGroupTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/TestBase.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases1/TestBase.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases5/ContactInformationTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases5/ContactInformationTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases6/ReadContactsFromFileTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases6/ReadContactsFromFileTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases6/SetContactFotoTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases6/SetContactFotoTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases7/HiberConnectionContactTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/TestCases7/HiberConnectionContactTest.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/appmanager/ContactHelper.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/generator/ContactDataGenerator.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/generator/ContactDataGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/model/ContactData.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/model/ContactData.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/model/GroupData.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/model/GroupData.class" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/contacts.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/AddNewContactTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/AddNewContactTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/AddNewGroupTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/AddNewGroupTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteContactTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteContactTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteGroupTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteGroupTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditContactTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditContactTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditGroupTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditGroupTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/TestBase.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/TestBase.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases5/ContactInformationTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases5/ContactInformationTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases6/ReadContactsFromFileTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases6/ReadContactsFromFileTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases6/SetContactFotoTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases6/SetContactFotoTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases7/HiberConnectionContactTest.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases7/HiberConnectionContactTest.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/ContactDataGenerator.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/ContactDataGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/Groups.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/Groups.java" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/testfile.log" afterPath="$PROJECT_DIR$/addressbook-web-tests/testfile.log" />
+      <change beforePath="$PROJECT_DIR$/sandbox/.gradle/4.3.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/sandbox/.gradle/4.3.1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/sandbox/.gradle/4.3.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/sandbox/.gradle/4.3.1/fileHashes/fileHashes.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
     <ignored path="$PROJECT_DIR$/sandbox/build/" />
@@ -50,6 +22,9 @@
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/.gradle/" />
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/build/" />
     <ignored path="$PROJECT_DIR$/addressbook-web-tests/out/" />
+    <ignored path="$PROJECT_DIR$/mantis-tests/.gradle/" />
+    <ignored path="$PROJECT_DIR$/mantis-tests/build/" />
+    <ignored path="$PROJECT_DIR$/mantis-tests/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +34,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/addressbook-web-tests">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/mantis-tests">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
@@ -121,43 +99,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java">
+      <file leaf-file-name="AddContactsToGroupTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/AddContactsToGroupTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="509">
+              <caret line="88" column="49" lean-forward="false" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
               <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#4057#4058#0" expanded="true" />
-                <element signature="e#4104#4105#0" expanded="true" />
-                <element signature="e#4142#4143#0" expanded="true" />
-                <element signature="e#4184#4185#0" expanded="true" />
-                <element signature="e#7636#7637#0" expanded="true" />
-                <element signature="e#7704#7705#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/DBHelper.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mantis-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddContactsToGroupTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/AddContactsToGroupTest.java">
+      <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="88" column="49" lean-forward="false" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+            <state relative-caret-position="42">
+              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/java/tests/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,29 +171,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-              <folding>
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HiberConnectionContactTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases7/HiberConnectionContactTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="44" column="52" lean-forward="false" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -235,12 +203,14 @@
     <option name="myGradleHomes">
       <map>
         <entry key="$PROJECT_DIR$/addressbook-web-tests" value="C:\Users\spuyandaykin\.gradle\wrapper\dists\gradle-4.3.1-all\97nfwr7im082t7xwc6bkwfrg9\gradle-4.3.1" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="C:\Users\spuyandaykin\.gradle\wrapper\dists\gradle-4.3.1-all\97nfwr7im082t7xwc6bkwfrg9\gradle-4.3.1" />
         <entry key="$PROJECT_DIR$/sandbox" value="C:\Users\spuyandaykin\.gradle\wrapper\dists\gradle-4.3.1-all\97nfwr7im082t7xwc6bkwfrg9\gradle-4.3.1" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
         <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4.3.1" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="4.3.1" />
         <entry key="$PROJECT_DIR$/sandbox" value="4.3.1" />
       </map>
     </option>
@@ -258,6 +228,22 @@
               <ExternalProjectPojo>
                 <option name="name" value="addressbook-web-tests" />
                 <option name="path" value="$PROJECT_DIR$/addressbook-web-tests" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="mantis-tests" />
+              <option name="path" value="$PROJECT_DIR$/mantis-tests" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="mantis-tests" />
+                <option name="path" value="$PROJECT_DIR$/mantis-tests" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -426,6 +412,147 @@
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'addressbook-web-tests'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mantis-tests">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'mantis-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'mantis-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'mantis-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'mantis-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
@@ -608,6 +735,8 @@
       <map>
         <entry key="$PROJECT_DIR$/addressbook-web-tests" value="3034696232553" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="3304183745" />
+        <entry key="$PROJECT_DIR$/mantis-tests" value="3035628985598" />
+        <entry key="$PROJECT_DIR$/mantis-tests/build.gradle" value="212698419" />
         <entry key="$PROJECT_DIR$/sandbox" value="3032007506848" />
         <entry key="$PROJECT_DIR$/sandbox/build.gradle" value="618040119" />
         <entry key="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" value="1491888232" />
@@ -777,6 +906,173 @@
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/addressbook-web-tests/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/addressbook-web-tests/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mantis-tests">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/mantis-tests">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/mantis-tests" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="mantis-tests" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-base-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-base-services-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-build-cache-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-build-option-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-cli-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-core-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-core-api-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-docs-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-installation-beacon-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-jvm-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-kotlin-dsl-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-builders-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-models-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-launcher-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-logging-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-messaging-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-model-core-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-model-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-persistent-cache-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-process-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-resources-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-runtime-api-info-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-tooling-api-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/gradle-wrapper-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-announce-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-antlr-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-build-cache-http-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-build-comparison-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-build-init-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-code-quality-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-composite-builds-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-dependency-management-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-diagnostics-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-ear-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-ide-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-ide-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-ide-play-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-ivy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-jacoco-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-javascript-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-language-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-language-java-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-language-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-language-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-language-scala-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-maven-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-osgi-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-platform-base-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-platform-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-platform-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-platform-play-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-plugin-development-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-plugin-use-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-plugins-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-publish-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-reporting-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-resources-gcs-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-resources-http-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-resources-s3-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-resources-sftp-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-scala-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-signing-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-test-kit-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-testing-base-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-testing-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-testing-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-tooling-api-builders-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-version-control-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/gradle-workers-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-all/97nfwr7im082t7xwc6bkwfrg9/gradle-4.3.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/mantis-tests/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/mantis-tests/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -958,10 +1254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/step2/EditFirstContactTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/SessionHelper.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases2/DifferentBrowsersTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteFirstContactTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditFirstContactTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/EditFirstGroupTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases1/DeleteFirstGroupTest.java" />
@@ -1009,14 +1301,18 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/DeleteContactsFromGroupTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/AddContactsToGroupTest.java" />
+        <option value="$PROJECT_DIR$/mantis-tests/build.gradle" />
+        <option value="$PROJECT_DIR$/mantis-tests/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/mantis-tests/src/main/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/mantis-tests/src/main/java/tests/TestBase.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="30" />
-    <option name="y" value="4" />
-    <option name="width" value="1837" />
-    <option name="height" value="985" />
+    <option name="x" value="297" />
+    <option name="y" value="17" />
+    <option name="width" value="1622" />
+    <option name="height" value="991" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1053,12 +1349,6 @@
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1081,75 +1371,52 @@
               <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mantis-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1161,14 +1428,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../software-testing" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mantis-tests/build.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\java-trenning\mantis-tests\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="appmanager" />
+      <recent name="tests" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="appmanager" />
       <recent name="step2" />
@@ -1490,7 +1764,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="4" width="1837" height="985" extended-state="1" />
+    <frame x="297" y="17" width="1622" height="991" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1500,15 +1775,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789117" sideWeight="0.10113704" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45012164" sideWeight="0.89886296" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45012164" sideWeight="0.89886296" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24929018" sideWeight="0.4934334" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3077859" sideWeight="0.4975812" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2839586" sideWeight="0.4934334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30555555" sideWeight="0.4975812" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23837982" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.237933" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1557,24 +1832,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts" />
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.csv" />
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1863,8 +2120,8 @@
         <state relative-caret-position="130">
           <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
           <folding>
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="false" />
+            <element signature="e#904#905#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1956,11 +2213,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/TestCases8/AddContactsToGroupTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="509">
           <caret line="88" column="49" lean-forward="false" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/java/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-tests/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2016,7 +2307,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>addressbook-web-tests_main|addressbook-web-tests</last-edited>
+          <last-edited>mantis-tests|addressbook-web-tests</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
