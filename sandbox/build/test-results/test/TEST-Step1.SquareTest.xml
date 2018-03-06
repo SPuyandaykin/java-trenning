@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Step1.SquareTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-05T12:02:57" hostname="s-puyandaykin-n" time="0.007">
+  <properties/>
+  <testcase name="testArea" classname="Step1.SquareTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests.BugifyIntegrationTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2018-03-05T11:45:03" hostname="s-puyandaykin-n" time="1.793">
+  <properties/>
+  <testcase name="testBugifyIntegration" classname="Tests.BugifyIntegrationTest" time="1.793">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[issues is: [Tests.Issue@afe3df66, Tests.Issue@581ca518, Tests.Issue@6a21d03f]
+size is: 3
+id is: 1015
+http://demo.bugify.com/api/issues/1015.json
+status is: Open
+skipped is:1015
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
